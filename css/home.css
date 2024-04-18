@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-font);
+}
+
+:root {
+    --background: #003039;
+    --cor-font: #f4f4f4;
+    --cor-img: #07459d;
+    --back-google: #8492a6;
+    --back-home: #969faa;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 100%; /* Alterado para ocupar toda a largura da tela */
+    height: auto; /* Alterado para se ajustar dinamicamente ao conteúdo */
+    padding: 20px; /* Alterado para um preenchimento uniforme */
+    border-radius: 10px;
+    position: relative;
+}
+
+main > section.header {
+    width: 100%; /* Alterado para ocupar toda a largura do main */
+    height: auto; /* Alterado para se ajustar dinamicamente ao conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adicionado espaçamento inferior */
+}
+
+main > section.header > .image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+main > section.header > .image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+    color: #000;
+    font-size: 2.5em;
+}
+
+main > .box {
+    width: 100%; /* Alterado para ocupar toda a largura do main */
+    max-width: 430px; /* Mantido o máximo de 430px */
+    height: auto; /* Alterado para se ajustar dinamicamente ao conteúdo */
+    background-color: var(--back-google);
+    margin-bottom: 30px; /* Alterado para espaçamento inferior */
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #00000077;
+}
+
+footer {
+    position: fixed; /* Alterado para fixar no rodapé da tela */
+    bottom: 20px; /* Espaço do rodapé */
+    left: 50%;
+    transform: translateX(-50%); /* Centralizar horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 90%; /* Reduzido para evitar que ultrapasse a largura da tela */
+    max-width: 600px; /* Definido uma largura máxima */
+    height: 60px;
+    background-color: #8492a6;
+    border-radius: 10px;
+}
+
+footer > .material-symbols-outlined {
+    margin-bottom: 7px;
+}
+
+#home {
+    background: gray;
+    border-radius: 8px;
+}
+
+/* Estilos adicionais para o feed */
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feed-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feed-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.feed-item p {
+    margin-top: 10px;
+}
+
+.feed-item video {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Outros estilos permanecem iguais */

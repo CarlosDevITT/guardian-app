@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-font);
+}
+
+:root{
+    --background: #003039;
+    --cor-font: #f4f4f4;
+    --cor-img: #07459d;
+    --back-google: #8492a6;
+    --back-home: #969faa;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    overflow-x: hidden;
+}
+
+main{
+    max-width: 430px;
+    height: 730px;
+    margin: auto;
+    box-shadow: 1px 1px 8px #0000003b;
+    padding: 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+header h1{
+    padding-top: 30px;
+
+}
+
+header > p{
+    margin-bottom: 20px;
+}
+
+section.image{
+
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 15px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+
+section.image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.conteudo > .nome{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.conteudo > .email{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.19em;
+}
+
+.icon{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.icon > .henrique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon > .henrique > .material-symbols-outlined{
+    font-size: 5em;
+}
+
+.icon > .henrique > p{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+.icon > .health{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon > .health > .material-symbols-outlined{
+    font-size: 5em;
+}
+
+.icon > .health > p{
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+main > section.conteudo a{
+    font-size: 1.2em;
+    position: absolute;
+    top:80%;
+    left: 15%;
+
+    width: 70%;
+ 
+    background-color: #8492a6;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    margin: auto;
+    margin-top: 1px;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+
+}
+
+main > section.conteudo a:hover{
+    background-color: var(--cor-font);
+}
